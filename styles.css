@@ -1,0 +1,14 @@
+* {
+    color: black;
+    background-color: oldlace;
+}
+
+.titleHeader {
+    text-align: center;
+}
+
+input[group="metaData"] {
+    background-color: whitesmoke;
+    color: black;
+    width: 100%;
+}

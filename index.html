@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<body>
+<h1 class="titleHeader">Black Crusader Tracker</h1>
+<div class="crusadeMetaData">
+    <form>
+        <label for="crusadeForceName">Crusade Force Name</label>
+        <input group="metaData" type="Text" id="crusadeForceName" data-store="crusadeForceName"><br>
+        <label for="crusadeFaction">Crusade Faction</label>
+        <input group="metaData" type="text" id="crusadeFaction" data-store="crusadeFaction"><br>
+        <label for="crusadePlayerName">Player Name</label>
+        <input group="metaData" type="text" id="crusadePlayerName" data-store="crusadePlayerName"></input>
+    </form>
+</div>
+
+<div class="crusadeStats">
+    <table class="crusadeStatsTable">
+        <tr>
+            <td>Battle Tally</td>
+            <td>Battles Won</td>
+            <td>Requisition Points</td>
+            <td>Supply Limit</td>
+            <td>Supply Used</td>
+        </tr>
+        <tr>
+            <td><input data-store="crusadeBattleTally"></input></td>
+            <td><input data-store="crusadeBattlesWon"></input></td>
+            <td><input data-store="crusadeReqPoints"></input></td>
+            <td><input data-store="crusadeSupplyLimit"></input></td>
+            <td><input data-store="crsuadeSupplyUsed"></input></td>
+        </tr>
+    </table>
+</div>
+
+<div class="crusadeCards">
+    <table class="crusadeCardsTable">
+        <tr>
+            <td colspan="2">Crusade Cards</td>
+            <td>Power Rating</td>
+            <td>Crusade Points</td>
+        </tr>
+        <tr>
+            <td><a href="unit1.html">Unit 1: </a></td>
+            <td><p id="crusadeUnit1NameDisplay"></p></td>
+            <td><p id="crusadeUnit1PowerRating"></p></td>
+            <td><p id="crusadeUnit1CrusadePoints"></p></td>
+        </tr>
+        <tr>
+            <td>Unit 2: </td>
+            <td><p id="crusadeUnit2NameDisplay"></p></td>
+            <td><p id="crusadeUnit2PowerRating"></p></td>
+            <td><p id="crusadeUnit2CrusadePoints"></p></td>
+        </tr>
+    </table>
+</div>
+<div class="crusadeGoals">
+    <table class="crusadeGoalsTable">
+        <tr>
+            <td>Crusade Goals, Information and Notable Victories</td>
+        </tr>
+        <tr>
+        <input data-store="crusadeGoals"></input>  
+        </tr>
+    </table>
+</div>
+
+
+
+</body>
+<script src="java.js"></script>
+</html>
